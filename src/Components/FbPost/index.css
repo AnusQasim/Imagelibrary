@@ -1,0 +1,100 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.p-work {
+  display: flex;
+}
+
+.ProfileContainer {
+  border: 2px solid #01579b;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%; /* Default width for smaller screens */
+
+  @media (min-width: 768px) {
+    /* Adjust the width for screens with a minimum width of 768px */
+    width: 80%;
+    max-width: 600px;
+  }
+
+  @media (min-width: 1024px) {
+    /* Adjust the width for screens with a minimum width of 1024px */
+    width: 60%;
+    max-width: 800px;
+  }
+}
+
+.Profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.Profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  left: 100%;
+  margin: 5%;
+  padding: 5px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.main-Img {
+  margin-top: 10px;
+}
+
+.main-Img img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.like-btn,
+.comment-btn,
+.share-btn {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #01579b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.emojis {
+  font-size: 20px;
+}
